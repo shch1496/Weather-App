@@ -1,4 +1,4 @@
-const API_KEY = "0c4a9febc23ef1fdf73343f0e6eac033";
+const API_KEY = "";
 
 const getCurrentWeatherData = async () => {
   const city = "pune";
@@ -75,10 +75,9 @@ const loadFeelsLike = ({ main: { feels_like } }) => {
 };
 
 const loadHumidity = ({ main: { humidity } }) => {
-    let container = document.querySelector("#humidity");
-    container.querySelector(".humidity-value").textContent =
-      `${humidity} %`;
-  };
+  let container = document.querySelector("#humidity");
+  container.querySelector(".humidity-value").textContent = `${humidity} %`;
+};
 
 document.addEventListener("DOMContentLoaded", async () => {
   const currentWeather = await getCurrentWeatherData();
