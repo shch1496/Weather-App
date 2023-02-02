@@ -5,3 +5,9 @@ API used -> https://openweathermap.org/api
 
 * We need API key to communicate with the service.
 * Use json hero -> To show the json info
+
+* To format the time:
+  Intl.DateTimeFormat("en", {
+    hour12: true,
+    hour: "numeric",
+  });
